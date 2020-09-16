@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Pattern.ChainOfResponsability;
 
 namespace Presentation
 {
@@ -6,7 +6,8 @@ namespace Presentation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var chain = new ChainDemo();
+            chain.Run();
         }
     }
 }
