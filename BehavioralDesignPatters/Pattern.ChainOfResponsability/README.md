@@ -13,5 +13,5 @@
      - Initiates the request to a ConcreteHandler object on the chain
 3. Class Diagram
    ![Class Diagram](ChainOfResponsability_ClassDiagram.png)
-4. In execution...
+4. In execution...<br>
    ![Console App Execution](chainExecution.png)
