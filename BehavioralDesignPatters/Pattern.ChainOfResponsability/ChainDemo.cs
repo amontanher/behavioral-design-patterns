@@ -1,5 +1,5 @@
 ﻿using Pattern.ChainOfResponsability.Pattern.Domain;
-using System;
+using System.Threading;
 
 namespace Pattern.ChainOfResponsability
 {
@@ -14,8 +14,6 @@ namespace Pattern.ChainOfResponsability
         /// </summary>
         public void Run()
         {
-            Console.WriteLine("Starting ChainOfResponsability");
-
             SetupChainOfResponsabilities();
             SetupChainSucessors();
 
@@ -27,9 +25,10 @@ namespace Pattern.ChainOfResponsability
             };
 
             foreach (var process in hiringProcess)
+            {
                 hr.HandleProcess(process);
-
-            Console.WriteLine("Finishing ChainOfResponsability");
+                Thread.Sleep(1000);
+            }
         }
 
         private void SetupChainOfResponsabilities()
