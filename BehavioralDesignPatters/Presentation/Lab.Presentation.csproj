@@ -6,7 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Pattern.ChainOfResponsability\Pattern.ChainOfResponsability.csproj" />
+    <ProjectReference Include="..\Pattern.ChainOfResponsability\Lab.Pattern.ChainOfResponsability.csproj" />
+    <ProjectReference Include="..\Pattern.Command\Lab.Pattern.Command.csproj" />
   </ItemGroup>
 
 </Project>
